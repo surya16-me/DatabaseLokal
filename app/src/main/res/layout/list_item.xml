@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txttanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal\t                : "
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            />
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/txttanggal"
+            android:text="2/2/2021"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            />
+        <TextView
+            android:id="@+id/txtkotor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penghasilan Kotor\t  : "
+            android:layout_alignStart="@+id/txttanggal"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/pengkor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtkotor"
+            android:text="200000"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/txtharian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txttanggal"
+            android:layout_alignParentBottom="true"
+            android:text="Pengeluaran Harian\t: "
+            android:layout_marginBottom="22dp"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/penghar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtharian"
+            android:layout_alignParentBottom="true"
+            android:text="10000"
+            android:layout_marginBottom="22dp"
+            android:textSize="17sp"
+             />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
